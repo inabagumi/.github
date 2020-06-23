@@ -1,0 +1,6 @@
+{
+    "name": "Test",
+    "description": "Build and test a Node.js project.",
+    "iconName": "node",
+    "categories": ["Node"]
+}
