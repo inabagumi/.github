@@ -1,0 +1,6 @@
+{
+  "name": "CodeQL",
+  "description": "Security analysis from GitHub for C, C++, C#, Java, JavaScript, TypeScript, Python, and Go developers.",
+  "iconName": "blank",
+  "categories": ["Security"]
+}
