@@ -1,6 +1,6 @@
 {
-  "name": "Test",
+  "name": "Node.js",
   "description": "Build and test a Node.js project with Yarn.",
   "iconName": "nodejs",
-  "categories": ["Node"]
+  "categories": ["JavaScript", "TypeScript", "Node.js", "Yarn"]
 }
