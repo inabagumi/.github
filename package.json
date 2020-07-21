@@ -1,0 +1,23 @@
+{
+  "author": "Haneru Developers",
+  "dependencies": {},
+  "description": "Community health files for the Haneru Developers.",
+  "devDependencies": {
+    "@inabagumi/prettier-config": "^1.1.2",
+    "prettier": "^2.0.5"
+  },
+  "homepage": "https://github.com/inabagumi/.github",
+  "license": "MIT",
+  "name": "@inabagumi/github-community-health",
+  "prettier": "@inabagumi/prettier-config",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inabagumi/.github.git"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format-check": "prettier --check ."
+  },
+  "version": "1.0.0"
+}
