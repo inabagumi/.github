@@ -3,10 +3,10 @@ name: Node.js
 on:
   pull_request:
     branches:
-      - trunk
+      - $default-branch
   push:
     branches:
-      - trunk
+      - $default-branch
     tags:
       - '!v*'
 
