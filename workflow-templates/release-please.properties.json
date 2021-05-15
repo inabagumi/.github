@@ -1,0 +1,7 @@
+{
+  "name": "Release Please",
+  "description": "Generate release PRs based on the conventionalcommits.org spec.",
+  "iconName": "octicon tools",
+  "categories": ["Automation", "Node.js"],
+  "filePatterns": ["^package.json$"]
+}

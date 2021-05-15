@@ -2,5 +2,6 @@
   "name": "Node.js",
   "description": "Build and test a Node.js project with Yarn.",
   "iconName": "nodejs",
-  "categories": ["JavaScript", "TypeScript", "Node.js", "Yarn"]
+  "categories": ["JavaScript", "TypeScript", "Node.js", "Yarn"],
+  "filePatterns": ["^package.json$"]
 }
