@@ -2,8 +2,7 @@ name: release-please
 
 on:
   push:
-    branches:
-      - $default-branch
+    branches: [$default-branch]
 
 jobs:
   release-please:
@@ -12,4 +11,5 @@ jobs:
       - uses: google-github-actions/release-please-action@v2
         with:
           token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          package-name: ''
           release-type: node
