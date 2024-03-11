@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@inabagumi/prettier-config@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-2.0.2.tgz#0ac9ae0713980ec2391730323b7d25fa9e1c0959"
-  integrity sha512-R35xTbZ0QeZ31k6S8KoSpzDSPPbFggYE6DgoVpW4cwIHF9VwAWToTfxd7vJ4J7m1rmMIJMWSvuYmPu1lvEcBNw==
+"@inabagumi/prettier-config@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-3.0.0.tgz#2068cd0bd7a79e887bbb5f3a6c7e22fe43a228ae"
+  integrity sha512-C6SXKNTQ5Zd7+b/cDRlXpkzTcecbq0lsWFpIe+oxo4zIf6fuyi0/CS4w8vcviZI5QEQSU/mXBha/VF0ulyzZtQ==
 
 prettier@~3.2.5:
   version "3.2.5"

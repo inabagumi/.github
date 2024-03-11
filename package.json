@@ -3,7 +3,7 @@
   "dependencies": {},
   "description": "Community health files for the Haneru Developers.",
   "devDependencies": {
-    "@inabagumi/prettier-config": "^2.0.2",
+    "@inabagumi/prettier-config": "^3.0.0",
     "prettier": "~3.2.5"
   },
   "homepage": "https://github.com/inabagumi/.github",
