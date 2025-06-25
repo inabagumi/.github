@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/@inabagumi/prettier-config/-/prettier-config-3.0.0.tgz#2068cd0bd7a79e887bbb5f3a6c7e22fe43a228ae"
   integrity sha512-C6SXKNTQ5Zd7+b/cDRlXpkzTcecbq0lsWFpIe+oxo4zIf6fuyi0/CS4w8vcviZI5QEQSU/mXBha/VF0ulyzZtQ==
 
-prettier@~3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.6.0.tgz#18ec98d62cb0757a5d4eab40253ff3e6d0fc8dea"
-  integrity sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==
+prettier@~3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.6.1.tgz#cc3bce21c09a477b1e987b76ce9663925d86ae44"
+  integrity sha512-5xGWRa90Sp2+x1dQtNpIpeOQpTDBs9cZDmA/qs2vDNN2i18PdapqY7CmBeyLlMuGqXJRIOPaCaVZTLNQRWUH/A==
