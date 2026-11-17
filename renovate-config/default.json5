@@ -1,0 +1,51 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    // Basic settings
+    ':combinePatchMinorReleases',
+    ':dependencyDashboard',
+    ':enableRenovate',
+    ':enableVulnerabilityAlertsWithLabel(security)',
+    ':ignoreModulesAndTests',
+    ':label(bot: renovate)',
+    ':prImmediately',
+    ':renovatePrefix',
+    ':semanticCommitTypeAll(build)',
+    ':separateMultipleMajorReleases',
+    ':timezone(Asia/Tokyo)',
+    ':widenPeerDependencies',
+    'customManagers:githubActionsVersions',
+    'customManagers:dockerfileVersions',
+    'group:monorepos',
+    'group:recommended',
+    'workarounds:all',
+
+    // Automerge
+    ':automergeMinor',
+    ':automergeRequireAllStatusChecks',
+
+    // Docker
+    'preview:dockerCompose',
+    'preview:dockerVersions',
+
+    // Others
+    ':disableRateLimiting',
+    ':maintainLockFilesWeekly'
+  ],
+  dependencyDashboardLabels: ['bot: renovate'],
+  postUpdateOptions: [
+    'gomodTidy',
+    'gomodUpdateImportPaths',
+    'pnpmDedupe',
+    'yarnDedupeHighest'
+  ],
+  rangeStrategy: 'bump',
+  platformAutomerge: true,
+  rebaseWhen: 'conflicted',
+  kubernetes: {
+    fileMatch: ['^k8s/.+\\.yaml$']
+  },
+  lockFileMaintenance: {
+    extends: [':semanticCommitType(build)']
+  }
+}
