@@ -1,9 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>inabagumi/renovate-config:base",
-    "github>inabagumi/renovate-config:automerge",
-    "github>inabagumi/renovate-config:docker",
+    "github>inabagumi/.github//renovate-config/base",
+    "github>inabagumi/.github//renovate-config/automerge",
+    "github>inabagumi/.github//renovate-config/docker",
     ":disableRateLimiting",
     ":maintainLockFilesWeekly"
   ],
