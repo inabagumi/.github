@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>inabagumi/renovate-config:base",
+    "github>inabagumi/renovate-config:automerge",
+    "github>inabagumi/renovate-config:docker",
+    ":disableRateLimiting",
+    ":maintainLockFilesWeekly"
+  ],
+  "lockFileMaintenance": {
+    "extends": [":semanticCommitType(build)"]
+  }
+}
