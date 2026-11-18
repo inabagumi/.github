@@ -1,5 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>inabagumi/.github//renovate-config/default.json5"],
-  "reviewers": ["ykzts"]
+  "extends": ["github>inabagumi/.github//renovate-config/default.json5"]
 }

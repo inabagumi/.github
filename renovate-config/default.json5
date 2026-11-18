@@ -32,6 +32,42 @@
     ':disableRateLimiting',
     ':maintainLockFilesWeekly'
   ],
+  customManagers: [
+    {
+      customType: 'regex',
+      description: 'Update `_VERSION` variables in shell scripts',
+      managerFilePatterns: ['**/*.sh'],
+      matchStrings: [
+        '# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+(?:export\\s+)?[A-Z0-9_]+?_VERSION="?(?<currentValue>[^"\\s]+?)"?\\s'
+      ]
+    }
+  ],
+  minimumReleaseAge: '1 day',
+  packageRules: [
+    {
+      description: 'Read the Dev Container image tag as <image version>-<Node.js version>-<distribution>, so that a Node.js major is a major update',
+      matchDatasources: ['docker'],
+      matchPackageNames: ['mcr.microsoft.com/devcontainers/typescript-node'],
+      versioning: 'regex:^(?<minor>\\d+)-(?<major>\\d+)-(?<compatibility>[a-z]+)$'
+    },
+    {
+      description: 'Do not automerge a new image version, which can change the tools in the Dev Container',
+      matchDatasources: ['docker'],
+      matchPackageNames: ['mcr.microsoft.com/devcontainers/typescript-node'],
+      matchUpdateTypes: ['minor'],
+      automerge: false
+    },
+    {
+      description: 'Update the Node.js major in .node-version, devEngines and the Dev Container image together',
+      groupName: 'Node.js major',
+      matchPackageNames: [
+        'mcr.microsoft.com/devcontainers/typescript-node',
+        'node'
+      ],
+      matchUpdateTypes: ['major']
+    }
+  ],
+  reviewers: ['ykzts'],
   dependencyDashboard: {
     labels: ['bot: renovate']
   },
