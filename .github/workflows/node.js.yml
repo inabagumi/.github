@@ -30,4 +30,4 @@ jobs:
           node-version: 26.13.1
       - run: >-
           npx --yes --package renovate --
-          renovate-config-validator --no-global renovate-config/default.json5
+          renovate-config-validator --strict --no-global renovate-config/default.json5
