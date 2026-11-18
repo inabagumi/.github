@@ -1,35 +1,36 @@
 {
-  "author": "Haneru Developers",
-  "dependencies": {},
+  "name": "@inabagumi/github-community-health",
+  "version": "1.0.0",
+  "private": true,
   "description": "Community health files for the Haneru Developers.",
-  "devDependencies": {
-    "@inabagumi/prettier-config": "^3.0.0",
-    "prettier": "~3.10.1"
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "onFail": "download",
-      "version": "12.21.0"
-    },
-    "runtime": {
-      "name": "node",
-      "onFail": "download",
-      "version": "26.13.1"
-    }
-  },
   "homepage": "https://github.com/inabagumi/.github",
   "license": "MIT",
-  "name": "@inabagumi/github-community-health",
-  "prettier": "@inabagumi/prettier-config",
-  "private": true,
+  "author": "Haneru Developers",
   "repository": {
     "type": "git",
     "url": "https://github.com/inabagumi/.github.git"
   },
+  "type": "module",
   "scripts": {
-    "format": "prettier --write .",
-    "format-check": "prettier --check ."
+    "check": "ultracite check",
+    "fix": "ultracite fix"
   },
-  "version": "1.0.0"
+  "dependencies": {},
+  "devDependencies": {
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
+    "ultracite": "^8.2.1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.21.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "26.13.1",
+      "onFail": "download"
+    }
+  }
 }
