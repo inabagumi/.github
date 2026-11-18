@@ -5,7 +5,7 @@ on:
     branches: [$default-branch]
   push:
     branches: [$default-branch]
-    tags: ['!v*']
+    tags: ["!v*"]
 
 jobs:
   build:

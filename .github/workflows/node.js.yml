@@ -27,5 +27,4 @@ jobs:
         with:
           install: false
       - run: >-
-          pnpm dlx --package renovate
-          renovate-config-validator --strict --no-global renovate-config/default.json5
+          pnpm dlx --package renovate renovate-config-validator --strict --no-global renovate-config/default.json5
