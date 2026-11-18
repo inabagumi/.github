@@ -11,9 +11,8 @@
     "url": "https://github.com/inabagumi/.github.git"
   },
   "scripts": {
-    "format": "ultracite fix",
-    "format-check": "ultracite check",
-    "lint": "oxlint"
+    "check": "ultracite check",
+    "fix": "ultracite fix"
   },
   "dependencies": {},
   "devDependencies": {
