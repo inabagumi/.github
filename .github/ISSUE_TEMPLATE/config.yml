@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: セキュリティー上の脆弱性
+    url: https://github.com/inabagumi/.github/blob/main/SECURITY.md
+    about: 公開のIssueは作成せず、セキュリティーポリシーに従って報告してください。
