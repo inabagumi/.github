@@ -1,48 +1,48 @@
-name: Bug report
-description: Report something that is not working as expected.
+name: 不具合の報告
+description: 期待どおりに動作しない問題を報告します。
 type: Bug
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to report a bug. Please search the existing issues before opening a new one.
+        不具合の報告をありがとうございます。新しく作成する前に、同じ内容のIssueがないか確認してください。
 
-        Do not report security vulnerabilities here. Follow the security policy instead.
+        セキュリティー上の脆弱性はここに報告せず、セキュリティーポリシーに従って報告してください。
   - type: textarea
     id: description
     attributes:
-      label: Description
-      description: A clear and concise description of the bug.
+      label: 不具合の内容
+      description: どのような不具合が起きているかを簡潔に説明してください。
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: Steps to reproduce
-      description: The steps to reproduce the behavior.
+      label: 再現手順
+      description: 不具合を再現する手順を記載してください。
       placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. See the error
+        1. 「...」を開く
+        2. 「...」をクリックする
+        3. エラーが表示される
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
-      description: What you expected to happen.
+      label: 期待する動作
+      description: 本来どのように動作するべきかを記載してください。
     validations:
       required: true
   - type: textarea
     id: environment
     attributes:
-      label: Environment
-      description: The browser, OS, versions and other details of the environment where the bug occurs.
+      label: 環境
+      description: 不具合が起きた環境のOSやブラウザー、バージョンなどを記載してください。
       placeholder: |
         - OS: macOS 26
-        - Browser: Chrome 142
+        - ブラウザー: Chrome 142
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional context
-      description: Screenshots, logs or anything else that helps to explain the bug.
+      label: 補足
+      description: スクリーンショットやログなど、不具合の説明に役立つ情報があれば記載してください。
