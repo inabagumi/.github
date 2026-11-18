@@ -32,7 +32,9 @@
     ':disableRateLimiting',
     ':maintainLockFilesWeekly'
   ],
-  dependencyDashboardLabels: ['bot: renovate'],
+  dependencyDashboard: {
+    labels: ['bot: renovate']
+  },
   postUpdateOptions: [
     'gomodTidy',
     'gomodUpdateImportPaths',
@@ -43,7 +45,7 @@
   platformAutomerge: true,
   rebaseWhen: 'conflicted',
   kubernetes: {
-    fileMatch: ['^k8s/.+\\.yaml$']
+    managerFilePatterns: ['/^k8s/.+\\.yaml$/']
   },
   lockFileMaintenance: {
     extends: [':semanticCommitType(build)']
