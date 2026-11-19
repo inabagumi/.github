@@ -179,13 +179,13 @@ importers:
         specifier: runtime:26.13.1
         version: runtime:26.13.1
       oxfmt:
-        specifier: ^0.79.0
+        specifier: 0.79.0
         version: 0.79.0
       oxlint:
-        specifier: ^1.94.0
+        specifier: 1.94.0
         version: 1.94.0
       ultracite:
-        specifier: ^8.3.0
+        specifier: 8.3.0
         version: 8.3.0(oxfmt@0.79.0)(oxlint@1.94.0)
 
 packages:
